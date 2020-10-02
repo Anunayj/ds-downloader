@@ -48,7 +48,7 @@ class downloader{
 
     async getAllVideos(){
         
-        const respgionse = await c(url).path("v2/videos/folder/").header({
+        const response = await c(url).path("v2/videos/folder/").header({
             "x-access-token": this.token
         }).send();
 
